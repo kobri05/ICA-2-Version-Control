@@ -93,13 +93,17 @@ my_symbols <- data.frame(symbol = my_symbols)
 4.  Find the total number of symbols we have in our data frame.
 
 ```{r}
-len <- length(my_Symbols)
+#| label: Total Number of Symbols in DF
+len <- length(my_Symbols$symbols)
+# Added variable $symbols to command len.
 ```
 
 5.  Create a new variable in your dataframe that assigns a number to each symbol.
 
 ```{r}
-my_symbols%Num <- 1:len
+#| label: Create New Variable
+my_symbols$Num <- 1:len
+#Changed percent sign between my_symbols and num to a '$'
 ```
 
 <!-- Developer Stage your Changes, Commit, and Push to the Git Repository-->
