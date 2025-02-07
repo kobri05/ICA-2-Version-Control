@@ -60,21 +60,26 @@ Each of the following R chunks will cause an error and / or do the desired task 
 1.  Create vectors containing the upper case letters, lower case letters, and some punctuation marks. add a label that indicate this code chunk creates the vectors of letters and punctuation.
 
 ```{r}
+#| label: Create Vectors
 
 lower_case <- c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
 
-upper_case <- c("A", "B", "C", "D", "E", "F", "G", "H" "I", "J", "K", "L", "M",
+upper_case <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
                 "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
 
 punctuation <- c(".", ",", "!", "?", "'", '"', "(", ")", " ", "-", ";", ":")
 
+# Added a comma between 'H' and "I'
 ```
+
 
 2.  Make **one** long **vector** containing all the symbols.
 
 ```{r}
-my_symbols <- (lower_case, upper_case, punctuation)
+#| label: One Long Vector
+my_symbols <- c(lower_case, upper_case, punctuation)
+# Added 'c' before parentheses to make command work.
 ```
 
 3.  Turn the `my_symbols` vector into a data frame, with one column named "symbol".
